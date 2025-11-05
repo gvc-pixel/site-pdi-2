@@ -1,0 +1,396 @@
+:root{
+    --cor-cesar: #ff6002;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    position: fixed;
+    top: 10px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+main{
+    flex: 1;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: fit-content;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    gap: 40rem;
+    padding-top: 32px;
+}
+
+.cabecalho__menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 40px;
+    border-radius: 40px;
+    background: rgba(255, 96, 2, 0.10);
+    box-shadow: 0 0 25px 0 rgba(228, 61, 0, 0.25) inset;
+    backdrop-filter: blur(4.099999904632568px);
+}
+
+.cabecalho__menu__link{
+    text-decoration: none;
+    color: #232323;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+}
+
+.cabecalho__menu__link__selecionado{
+    text-decoration: none;
+    background-color: var(--cor-cesar);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    border-radius: 100px;
+    box-shadow: 0 2px 8px 0 rgba(227, 51, 0, 0.50);
+}
+
+.cabecalho__menu__link:hover{
+    background-color: var(--cor-cesar);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    box-shadow: 0 2px 8px 0 rgba(227, 51, 0, 0.50);
+    transition: 0.3s;
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1030px;
+    height: fit-content;
+    padding: 64px 64px 0px;
+}
+
+.apresentacao__primeira__area{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 125%;
+    padding-bottom: 64px;
+    background: linear-gradient(40deg, var(--cor-cesar) 1.05%, #FFFEFD 99.28%);
+    width: 100vw;
+}
+
+#imagem__hero__paginas{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 220%;
+    padding-bottom: 16px;
+    background: linear-gradient(40deg, var(--cor-cesar) 1.05%, #FFFEFD 99.28%);
+    width: 100vw;
+}
+
+.apresentacao__conteudo{
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.apresentacao__segunda__area{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100vw;
+    padding: 32px 32px;
+}
+
+.apresentacao__areas__bloco{
+    display: flex;
+    flex-direction: column;
+    padding-left: 76px;
+    padding-right: 76px;
+    width: 500px;
+    gap: 20px;
+}
+
+.apresentacao__terceira__area{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    background-color: #232323;
+    color: white;
+    width: 130%;
+    padding: 64px 64px 64px 8px;
+    border-radius: 48px;
+    box-shadow: 0 2px 8px 0 rgba(35, 35, 35, 1);
+    margin: 2%;
+}
+
+.apresentacao__quarta__area{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100vw;
+    padding: 64px 32px;
+}
+
+.apresentacao__titulo__principal{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.625rem;
+    font-weight: 700;
+    width: 290px;
+    padding: 0px 16px;
+}
+
+.apresentacao__titulo__secao{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.625rem;
+    font-weight: 700;
+}
+
+h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha faz com que todo strong dentro dessa classe tenha essa cor*/
+
+#descricao{
+    color: #232323;
+    padding-left: 16px;
+} /*atribuí uma id ao parágrafo da descrição, e usando essa linha de código eu consigo mudar a cor sem afetar outros parágrafos*/
+
+#descricao__paginas{
+    color: #232323;
+    padding-left: 16px;
+    width: 400px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+#lista{
+    font-weight: 500;
+}
+
+#LegendaAtualizacao{width: 50; font-weight: 500;}
+
+.apresentacao__atualizacoes__titulo{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+}
+
+.apresentacao__area__atualizacoes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+    background-color: white;
+    color:#232323;
+    border-radius: 24px;
+    padding: 30px;
+    width: 40%;
+}
+
+.apresentacao__atualizacoes__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.apresentacao__subtitle{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.apresentacao__caption{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.apresentacao__body{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.carrossel__imagens{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    padding: 16px 0px;
+}
+
+.botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 20px;
+}
+
+.botao__corpo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-cesar);
+    color: #232323;
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 16px 32px;
+}
+
+.botao__corpo:hover{
+    background-color: var(--cor-cesar);
+    color: white;
+    transition: 0.1s;
+}
+
+.divider{
+    width: 100vw;
+    height: 0px;
+    border: black 1px solid;
+    opacity: 10%;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+    height: fit-content;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #232323;
+    padding: 32px;
+}
+
+.rodape__conteudo{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    max-width: 640px;
+    padding: 64px 48px;
+    border-radius: 32px;
+    background-image: url("../assets/bg-fundo-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    gap: 20px;
+}
+
+.hero__paginas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100vw;
+    height: fit-content;
+    padding: 64px 48px;
+    border-radius: 40px;
+    background: linear-gradient(180deg, rgba(255, 96, 2, 0.00) 0%, #FF6002 57.93%, #FE3E03 99.87%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    gap: 10px;
+}
+
+.hero__paginas__imagens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 130px;
+    right: 150px;
+}
+
+ul li::marker {
+  color: var(--cor-cesar);
+}
+
+.paginas__cargos__cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 24px;
+    background-color: white;
+    color:#232323;
+    border-radius: 24px;
+    padding: 24px 30px;
+    width: 80%;
+}
+
+.paginas__cargos__area{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    background-color: #232323;
+    color: white;
+    width: 130%;
+    border-radius: 48px;
+    box-shadow: 0 2px 8px 0 rgba(35, 35, 35, 1);
+    margin: 0%;
+}
