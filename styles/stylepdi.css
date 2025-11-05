@@ -118,7 +118,7 @@ main{
     gap: 28px;
     align-items: center;
     justify-content: center;
-    padding-top: 220%;
+    padding-top: 180%;
     padding-bottom: 16px;
     background: linear-gradient(40deg, var(--cor-cesar) 1.05%, #FFFEFD 99.28%);
     width: 100vw;
@@ -139,7 +139,7 @@ main{
     justify-content: center;
     background-color: white;
     width: 100vw;
-    padding: 32px 32px;
+    padding: 32px 32px 16px;
 }
 
 .apresentacao__areas__bloco{
@@ -147,7 +147,7 @@ main{
     flex-direction: column;
     padding-left: 76px;
     padding-right: 76px;
-    width: 500px;
+    width: 550px;
     gap: 20px;
 }
 
@@ -174,7 +174,7 @@ main{
     justify-content: center;
     background-color: white;
     width: 100vw;
-    padding: 64px 32px;
+    padding: 32px 32px;
 }
 
 .apresentacao__titulo__principal{
@@ -212,9 +212,22 @@ h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha f
 
 #LegendaAtualizacao{width: 50; font-weight: 500;}
 
+#terceira__area__cargos{
+    gap: 64px;
+    padding: 64px 8px;  
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+#area__blocos__cargos{
+    padding: 0px 0px;
+    width: 500px;
+}
+
 .apresentacao__atualizacoes__titulo{
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
+    font-size: 1.25rem;
 }
 
 .apresentacao__area__atualizacoes{
@@ -234,6 +247,12 @@ h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha f
     display: flex;
     flex-direction: column;
     gap: 8px;
+}
+
+.apresentacao__evidencias__titulo__info{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 .apresentacao__subtitle{
@@ -360,8 +379,8 @@ h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha f
     flex-direction: column;
     justify-content: center;
     position: relative;
-    top: 130px;
-    right: 150px;
+    top: 90px;
+    right: 130px;
 }
 
 ul li::marker {
@@ -378,7 +397,7 @@ ul li::marker {
     color:#232323;
     border-radius: 24px;
     padding: 24px 30px;
-    width: 80%;
+    width: 500px;
 }
 
 .paginas__cargos__area{
@@ -389,8 +408,38 @@ ul li::marker {
     justify-content: center;
     background-color: #232323;
     color: white;
-    width: 130%;
+    width: fit-content;
     border-radius: 48px;
-    box-shadow: 0 2px 8px 0 rgba(35, 35, 35, 1);
-    margin: 0%;
+}
+
+.paginas__evidencias__cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background-color: white;
+    color:#232323;
+    border-radius: 24px;
+    padding: 32px;
+    width: 500px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    background: #FFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 12px 0 rgba(0, 0, 0, 0.03);
+}
+
+.carrossel__evidencias{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    padding: 16px 0px;
+}
+
+.cards__evidencias__topo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 24px;
 }
