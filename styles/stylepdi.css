@@ -28,6 +28,13 @@ main{
     flex: 1;
 }
 
+.links__apenas__texto{
+    color: #232323;
+    font-weight: 700;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+}
+
 .cabecalho{
     display: flex;
     flex-direction: row;
@@ -112,13 +119,37 @@ main{
     width: 100vw;
 }
 
-#imagem__hero__paginas{
+#imagem__hero__pagina__junior{
     display: flex;
     flex-direction: row;
     gap: 28px;
     align-items: center;
     justify-content: center;
-    padding-top: 180%;
+    padding-top: 230%;
+    padding-bottom: 16px;
+    background: linear-gradient(40deg, var(--cor-cesar) 1.05%, #FFFEFD 99.28%);
+    width: 100vw;
+}
+
+#imagem__hero__pagina__pleno{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 240%;
+    padding-bottom: 16px;
+    background: linear-gradient(40deg, var(--cor-cesar) 1.05%, #FFFEFD 99.28%);
+    width: 100vw;
+}
+
+#imagem__hero__pagina__extras{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 130%;
     padding-bottom: 16px;
     background: linear-gradient(40deg, var(--cor-cesar) 1.05%, #FFFEFD 99.28%);
     width: 100vw;
@@ -181,7 +212,7 @@ main{
     font-family: 'DM Sans', sans-serif;
     font-size: 2.625rem;
     font-weight: 700;
-    width: 290px;
+    width: 320px;
     padding: 0px 16px;
 }
 
@@ -227,7 +258,7 @@ h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha f
 .apresentacao__atualizacoes__titulo{
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 .apresentacao__area__atualizacoes{
@@ -253,6 +284,18 @@ h1.apresentacao__titulo__secao > strong {color: var(--cor-cesar)} /*essa linha f
     display: flex;
     flex-direction: column;
     gap: 6px;
+}
+
+.apresentacao__evidencias__depoimentos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+}
+
+.apresentacao__evidencias__body{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .apresentacao__subtitle{
@@ -415,23 +458,30 @@ ul li::marker {
 .paginas__evidencias__cards{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
     background-color: white;
     color:#232323;
     border-radius: 24px;
     padding: 32px;
-    width: 500px;
+    width: 450px;
     border-radius: 16px;
     border: 1px solid rgba(0, 0, 0, 0.10);
     background: #FFF;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 12px 0 rgba(0, 0, 0, 0.03);
 }
 
-.carrossel__evidencias{
+.carrossel__evidencias__estrutura{
     display: flex;
     flex-direction: row;
+    width: fit-content;
+    gap: 28px;
+}
+
+.carrossel__evidencias__colunas{
+    display: flex;
+    flex-direction: column;
     gap: 28px;
     padding: 16px 0px;
 }
